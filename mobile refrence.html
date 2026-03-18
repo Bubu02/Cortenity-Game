@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nexus Community - Cyber Noir</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0657f9",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#0f1623",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .neon-glow {
+            box-shadow: 0 0 10px rgba(6, 87, 249, 0.4);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen w-full flex-col max-w-md mx-auto bg-background-light dark:bg-background-dark overflow-x-hidden">
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-20 border-b border-slate-200 dark:border-primary/20 backdrop-blur-md">
+<div class="text-slate-900 dark:text-slate-100 flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined">menu</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center uppercase tracking-widest">Nexus Community</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="relative flex items-center justify-center rounded-lg h-12 w-12 text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-3 right-3 flex h-2 w-2 rounded-full bg-primary neon-glow"></span>
+</button>
+</div>
+</header>
+<div class="px-4 py-4">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-lg">
+<div class="text-slate-500 dark:text-primary flex border-none bg-slate-100 dark:bg-primary/10 items-center justify-center pl-4 rounded-l-xl">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border-none bg-slate-100 dark:bg-primary/10 h-full placeholder:text-slate-400 dark:placeholder:text-slate-500 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search discussions, players, tags..." value=""/>
+</div>
+</label>
+</div>
+<section class="mb-6">
+<div class="flex items-center justify-between px-4 pb-3">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-wider">Active Challenges</h3>
+<a class="text-primary text-xs font-semibold" href="#">View All</a>
+</div>
+<div class="flex w-full overflow-x-auto no-scrollbar px-4 gap-4">
+<div class="flex flex-col shrink-0 w-32 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-xl border border-transparent group-hover:border-primary transition-all duration-300 relative overflow-hidden" data-alt="Abstract neon blue digital grid pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMIGiCcbgDjE4tmITfqfbbGsREHUbvg9tGhTWr3wy-VxyQ2A0Y1NQOOBaYgP3qsOoTc65H7k_76FQ9hPvodOO4Nim1YnbnA1jg985WITVX8gLBEjvUBJiTWTe1hRsurhggwc921XswlwLy28JmBRjyF5Nl6hwYeSS16LKdBh7sH8umMlv_UuRu_-UD0t2bQgOhe8mUIX1mtKCqlTfhACP8kMrc47rWzK315uEci6tMbj75tQI3oR9uALQhpXHVMVbYOBaVHlPoO_WS");'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+<div class="absolute bottom-2 left-2 text-[10px] text-primary font-bold uppercase">LIVE</div>
+</div>
+<p class="text-slate-900 dark:text-slate-100 text-xs font-bold mt-2 truncate">Code Breaker</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px]">1.2k Players</p>
+</div>
+<div class="flex flex-col shrink-0 w-32 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-xl border border-transparent group-hover:border-primary transition-all duration-300 relative overflow-hidden" data-alt="Retro synthwave sunset background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGAknQXi_GjmJ5H0YYAkXwGz-80akH3_IrQfcDWflgvEW53f5JDW4jhUW5G4Pb0A3ik7jY4__ZekmWUvCTPIMikEhOpyFIEYpLm-KC4VAxPr_lwxw17ts9GP4v3aLj_3pJ7XjSBxyPj_M-f4vYFjfZOTjpU9qKOvJxHvFMu6lSiGkMu30Ie-dhnfuNeYTa9288aSYudXRWELEbwurhxGlg7Y8Whi2LQRewKcJ3MIFXauTzYmBCFNvXM_R6U81ipI6dqHie5EzHyCGm");'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+</div>
+<p class="text-slate-900 dark:text-slate-100 text-xs font-bold mt-2 truncate">Neon Drift</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px]">850 Players</p>
+</div>
+<div class="flex flex-col shrink-0 w-32 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-xl border border-transparent group-hover:border-primary transition-all duration-300 relative overflow-hidden" data-alt="Futuristic cyber city landscape" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHPLjH0VQJl89gIQ9jKBy6OdbyWxg6IFDj75MVrQnvoiruVjTro_bKGX0JcJbRCljC82l3fdlE-3SJRSD29VO-vOZ4LrFoBwZXC1olMQ0EYA_XU3XrrTBm_am2on-6iIEMPD8QPHIfghOY3JhES3Jx2O2TATtf0XB_d2z3GyX9FUdJIcwj-Tn7lZZSQ1jWAeYPrI43MB5wVEkbpp2ffZk6WBoZRKofIaoSTAz6dVElrmhqJBclxL0BRt-SjWzQ3z2F0usAdDdTaX1O");'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+</div>
+<p class="text-slate-900 dark:text-slate-100 text-xs font-bold mt-2 truncate">Overload</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px]">2k Players</p>
+</div>
+</div>
+</section>
+<section class="mx-4 mb-6 p-4 rounded-xl bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/20">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">military_tech</span>
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-wider">Your Rank</h3>
+</div>
+<span class="text-primary text-xs font-bold">TOP 5%</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="size-14 rounded-full border-2 border-primary p-1">
+<div class="w-full h-full bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">S2</div>
+</div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-lg font-black italic">ELITE ENFORCER</p>
+<div class="w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full mt-1 overflow-hidden">
+<div class="h-full bg-primary neon-glow" style="width: 78%"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-[10px] mt-1">2,450 / 3,000 XP TO MASTER</p>
+</div>
+</div>
+</section>
+<section class="flex-1 px-4 pb-24">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-wider pb-4">Recent Activity</h3>
+<div class="space-y-4">
+<div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700">
+<div class="flex items-center gap-3 mb-3">
+<div class="size-10 rounded-full bg-primary/10 overflow-hidden border border-primary/30">
+<img class="w-full h-full object-cover" data-alt="User avatar male portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpqOiXQoCEx0MBDezIeAGWHXBTkp5Ep2MsrJ_8fByrjSFm3aOIqz_8Uq2U0wtUqJisBTup-kmRSG88cziUP9v6ti05gzPpQtUljN64lw5c_wW9LsQK41IbAMDen7AxsGPr2C9hkaPttwWDuyZwcd5LfXiDBEezIYun5rb8Q0U318JVoUWs-W4Io-QZJxTq3kinyN0jPG9EUWIj6XZpd_DB4JbYlEG0KonmzG7tE0Q5T5gb7zYNO37_HfLxMQt0ADytCRTEO-H9lOtY"/>
+</div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">Cypher_01</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px]">2 hours ago • <span class="text-primary">Neon Drift</span></p>
+</div>
+<button class="text-slate-400"><span class="material-symbols-outlined">more_horiz</span></button>
+</div>
+<p class="text-slate-800 dark:text-slate-300 text-sm leading-relaxed mb-3">Just shattered the world record for Sector 7 time trial. Has anyone found the shortcut near the neon bridge yet?</p>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">favorite</span>
+<span class="text-xs">428</span>
+</button>
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">chat_bubble</span>
+<span class="text-xs">82</span>
+</button>
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">share</span>
+</button>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700">
+<div class="flex items-center gap-3 mb-3">
+<div class="size-10 rounded-full bg-primary/10 overflow-hidden border border-primary/30">
+<img class="w-full h-full object-cover" data-alt="User avatar female portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEPDL7ng1mID-uZH0huJdC2Ujv22W9Yt4cfBiKArtmLD2VVZrBvUO51s7-wYf3tEA62_QJLK4J2GK6Obv66rwNBe1_V75ui7XwejQVcrNMwD7yF4fYJ6pW-_ohTcwIUGMv7H7JcQX5HrDP9QB_b9l8zJvMLC-QR97ZvI5cxHvmACkUKVu5HJeJcIP3ITpLiHBF1Dd8z2kTu18-DKWkZgAd_FLgjYgQJcndR7FtBTPepxL5npS_kW9ebtMuwBIgoTNz6qrFvL6DyBeC"/>
+</div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">V_Matrix</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px]">5 hours ago • <span class="text-primary">Global Feed</span></p>
+</div>
+<button class="text-slate-400"><span class="material-symbols-outlined">more_horiz</span></button>
+</div>
+<p class="text-slate-800 dark:text-slate-300 text-sm leading-relaxed mb-3">New guild recruitments are now open for 'The Glitch Hunters'. High XP required. DM for trial.</p>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">favorite</span>
+<span class="text-xs">156</span>
+</button>
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">chat_bubble</span>
+<span class="text-xs">12</span>
+</button>
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">share</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto z-30">
+<div class="flex gap-2 border-t border-slate-200 dark:border-primary/20 bg-background-light dark:bg-background-dark/95 backdrop-blur-lg px-4 pb-6 pt-3">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Games</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<div class="relative flex items-center justify-center">
+<span class="material-symbols-outlined">groups</span>
+<div class="absolute -top-1 -right-1 size-2 bg-primary rounded-full neon-glow"></div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-wider">Community</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">emoji_events</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Ranks</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Profile</p>
+</a>
+</div>
+</nav>
+</div>
+</body></html>
