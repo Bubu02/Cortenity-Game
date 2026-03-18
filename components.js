@@ -23,7 +23,8 @@ class NexusNavbar extends HTMLElement {
 
                 <!-- CENTER: Nav Links -->
                 <nav class="hidden md:flex items-center justify-center gap-8">
-                    <a href="store.html" class="text-sm text-[#666] hover:text-white transition-colors font-medium">Games</a>
+                    <a href="index.html" class="text-sm text-[#666] hover:text-white transition-colors font-medium">Home</a>
+                    <a href="games.html" class="text-sm text-[#666] hover:text-white transition-colors font-medium">Games</a>
                     <a href="leaderboards.html" class="text-sm text-[#666] hover:text-white transition-colors font-medium">Leaderboards</a>
                     <a href="community.html" class="text-sm text-[#666] hover:text-white transition-colors font-medium">Community</a>
                 </nav>
@@ -45,41 +46,48 @@ class NexusNavbar extends HTMLElement {
 
         <!-- MOBILE: Fixed Bottom Tab Bar -->
         <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-[#0a0a0a] border-t border-white/[0.06]">
-            <div class="flex items-center justify-around h-[60px] px-2">
+            <div class="flex items-center justify-around h-[60px] px-1">
 
                 <!-- Home -->
-                <a href="index.html" id="tab-home" class="flex flex-col items-center gap-0.5 group">
-                    <svg class="w-6 h-6 text-[#a855f7]" fill="currentColor" viewBox="0 0 24 24">
+                <a href="index.html" id="tab-home" class="flex flex-col items-center gap-0.5 group min-w-0">
+                    <svg class="w-5 h-5 text-[#a855f7]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
                     </svg>
-                    <span class="text-[0.55rem] font-bold tracking-wider uppercase text-[#a855f7]">Home</span>
+                    <span class="text-[0.5rem] font-bold tracking-wider uppercase text-[#a855f7]">Home</span>
                 </a>
 
                 <!-- Games -->
-                <a href="store.html" class="flex flex-col items-center gap-0.5">
-                    <svg class="w-6 h-6 text-[#555]" fill="currentColor" viewBox="0 0 24 24">
+                <a href="games.html" class="flex flex-col items-center gap-0.5 min-w-0">
+                    <svg class="w-5 h-5 text-[#555]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M15 7.5V2H9v5.5l3 3 3-3zM7.5 9H2v6h5.5l3-3-3-3zM9 16.5V22h6v-5.5l-3-3-3 3zM16.5 9l-3 3 3 3H22V9h-5.5z"/>
                     </svg>
-                    <span class="text-[0.55rem] font-bold tracking-wider uppercase text-[#555]">Games</span>
+                    <span class="text-[0.5rem] font-bold tracking-wider uppercase text-[#555]">Games</span>
                 </a>
 
-                <!-- Ranks -->
-                <a href="leaderboards.html" class="flex flex-col items-center gap-0.5">
-                    <svg class="w-6 h-6 text-[#555]" fill="currentColor" viewBox="0 0 24 24">
+                <!-- Leaderboard -->
+                <a href="leaderboards.html" class="flex flex-col items-center gap-0.5 min-w-0">
+                    <svg class="w-5 h-5 text-[#555]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M5 9h3v11H5zm6-5h3v16h-3zm6 8h3v8h-3z"/>
                     </svg>
-                    <span class="text-[0.55rem] font-bold tracking-wider uppercase text-[#555]">Ranks</span>
+                    <span class="text-[0.5rem] font-bold tracking-wider uppercase text-[#555]">Leaderboard</span>
+                </a>
+
+                <!-- Community -->
+                <a href="community.html" class="flex flex-col items-center gap-0.5 min-w-0">
+                    <svg class="w-5 h-5 text-[#555]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                    <span class="text-[0.5rem] font-bold tracking-wider uppercase text-[#555]">Community</span>
                 </a>
 
                 <!-- Profile -->
-                <a href="profile.html" class="flex flex-col items-center gap-0.5">
-                    <div class="w-6 h-6 rounded-full bg-gradient-to-br from-[#d4956a] to-[#b5723a] border border-[#8a5a2a]/60 flex items-center justify-center overflow-hidden">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Side profile silhouette -->
+                <a href="profile.html" class="flex flex-col items-center gap-0.5 min-w-0">
+                    <div class="w-5 h-5 rounded-full bg-gradient-to-br from-[#d4956a] to-[#b5723a] border border-[#8a5a2a]/60 flex items-center justify-center overflow-hidden">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.5 5.5 C14.5 3.5 13 2 11.5 2 C9.5 2 8 3.8 8.5 6 C8.8 7.5 9.5 8.5 10.5 9.2 C9 9.8 7.5 10.8 6.5 12.5 C5.5 14 5 16 5 18 L5 22 L18 22 L18 18 C18 15.5 17 13 15.5 11.5 C14.5 10.5 13.5 10 12.5 9.5 C13.8 8.5 14.5 7.2 14.5 5.5 Z" fill="rgba(255,220,180,0.9)"/>
                         </svg>
                     </div>
-                    <span class="text-[0.55rem] font-bold tracking-wider uppercase text-[#555]">Profile</span>
+                    <span class="text-[0.5rem] font-bold tracking-wider uppercase text-[#555]">Profile</span>
                 </a>
 
             </div>
