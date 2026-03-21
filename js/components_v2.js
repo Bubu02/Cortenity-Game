@@ -12,9 +12,8 @@ class CortenityNavbar extends HTMLElement {
         const p = isPage ? '' : 'pages/';
 
         this.innerHTML = `
-        <!-- Desktop / Tablet Header -->
         <header class="fixed top-0 w-full z-50 bg-[#0a0a0a]/95 backdrop-blur-md border-b border-white/[0.06]">
-            <div class="w-full px-6 h-16 grid grid-cols-3 items-center">
+            <div class="w-full px-6 h-16 flex items-center justify-between md:grid md:grid-cols-3">
                 <!-- LEFT: Logo -->
                 <a href="${r}index.html" class="flex items-center gap-2">
                     <div class="w-7 h-7 bg-white rounded-md flex items-center justify-center flex-shrink-0">
@@ -33,17 +32,22 @@ class CortenityNavbar extends HTMLElement {
                     <a href="${p}community.html" class="text-sm text-[#666] hover:text-white transition-colors font-medium">Community</a>
                 </nav>
 
-                <!-- RIGHT: Search + Sign In -->
-                <div class="hidden md:flex items-center justify-end gap-3">
-                    <div class="relative">
+                <!-- RIGHT: Search, Sign In (Desktop), Profile (Mobile) -->
+                <div class="flex items-center justify-end gap-3">
+                    <div class="hidden md:block relative">
                         <svg class="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-[#555]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                         </svg>
                         <input type="text" placeholder="Search games..." class="bg-white/[0.05] border border-white/10 rounded-full py-2 pl-9 pr-4 text-sm text-white/60 focus:outline-none focus:border-white/25 transition-all w-44 placeholder:text-[#444] font-sans">
                     </div>
-                    <button class="px-5 py-2 bg-white hover:bg-white/85 text-black font-semibold text-sm rounded-full transition-colors">
+                    <button class="hidden md:block px-5 py-2 bg-white hover:bg-white/85 text-black font-semibold text-sm rounded-full transition-colors">
                         Sign In
                     </button>
+                    <a href="${p}profile.html" class="md:hidden w-8 h-8 rounded-full bg-gradient-to-br from-[#d4956a] to-[#b5723a] border border-[#8a5a2a]/60 flex items-center justify-center overflow-hidden hover:opacity-80 transition-opacity">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.5 5.5 C14.5 3.5 13 2 11.5 2 C9.5 2 8 3.8 8.5 6 C8.8 7.5 9.5 8.5 10.5 9.2 C9 9.8 7.5 10.8 6.5 12.5 C5.5 14 5 16 5 18 L5 22 L18 22 L18 18 C18 15.5 17 13 15.5 11.5 C14.5 10.5 13.5 10 12.5 9.5 C13.8 8.5 14.5 7.2 14.5 5.5 Z" fill="rgba(255,220,180,0.9)"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </header>
@@ -82,16 +86,6 @@ class CortenityNavbar extends HTMLElement {
                         <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
                     </svg>
                     <span class="text-[0.5rem] font-bold tracking-wider uppercase text-[#555]">Community</span>
-                </a>
-
-                <!-- Profile -->
-                <a href="${p}profile.html" class="flex flex-col items-center gap-0.5 min-w-0">
-                    <div class="w-5 h-5 rounded-full bg-gradient-to-br from-[#d4956a] to-[#b5723a] border border-[#8a5a2a]/60 flex items-center justify-center overflow-hidden">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.5 5.5 C14.5 3.5 13 2 11.5 2 C9.5 2 8 3.8 8.5 6 C8.8 7.5 9.5 8.5 10.5 9.2 C9 9.8 7.5 10.8 6.5 12.5 C5.5 14 5 16 5 18 L5 22 L18 22 L18 18 C18 15.5 17 13 15.5 11.5 C14.5 10.5 13.5 10 12.5 9.5 C13.8 8.5 14.5 7.2 14.5 5.5 Z" fill="rgba(255,220,180,0.9)"/>
-                        </svg>
-                    </div>
-                    <span class="text-[0.5rem] font-bold tracking-wider uppercase text-[#555]">Profile</span>
                 </a>
 
             </div>
