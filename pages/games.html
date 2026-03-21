@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Library – Browse All Mini Games | NexusGames</title>
-    <meta name="description" content="Browse the full NexusGames library. Filter by Action, Puzzle, Strategy, RPG and more. Discover your next favourite free browser mini-game.">
+    <title>Games Library – Browse All Mini Games | Cortenity Gaming</title>
+    <meta name="description" content="Browse the full Cortenity Gaming library. Filter by Action, Puzzle, Strategy, RPG and more. Discover your next favourite free browser mini-game.">
     <meta name="keywords" content="browser games, mini games library, free online games, action games, puzzle games, strategy games">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://nexusgames.qlexia.com/games.html">
+    <link rel="canonical" href="https://cortenity.qlexia.com/games.html">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Games Library – NexusGames">
-    <meta property="og:description" content="Browse, filter, and play 200+ free browser mini-games on NexusGames.">
+    <meta property="og:title" content="Games Library – Cortenity Gaming">
+    <meta property="og:description" content="Browse, filter, and play 200+ free browser mini-games on Cortenity Gaming.">
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
@@ -83,7 +83,7 @@
 
         /* Hide the shared navbar header on mobile for this page (games page has its own mobile top bar) */
         @media (max-width: 767px) {
-            nexus-navbar > header { display: none !important; }
+            cortenity-navbar > header { display: none !important; }
         }
 
         /* Hide scrollbar for mobile horizontal filter */
@@ -94,7 +94,7 @@
 <body class="text-white font-sans antialiased min-h-screen bg-[#0a0a0a]">
 
     <!-- Shared Navbar -->
-    <nexus-navbar></nexus-navbar>
+    <cortenity-navbar></cortenity-navbar>
 
     <!-- Main Content -->
     <main class="pb-20 md:pb-0">
@@ -109,7 +109,7 @@
                             <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"/>
                         </svg>
                     </div>
-                    <span class="font-black text-white text-lg tracking-tight">Nexus<span class="text-[#2563eb]">Games</span></span>
+                    <span class="font-black text-white text-lg tracking-tight">Cortenity<span class="text-[#2563eb]">Gaming</span></span>
                 </a>
                 <!-- Right Icons -->
                 <div class="flex items-center">
@@ -221,7 +221,7 @@
                             <p class="text-white text-xs font-semibold">Players Online</p>
                         </div>
                         <p class="text-3xl font-black text-white tabular-nums">12,842</p>
-                        <p class="text-[#475569] text-xs mt-1">Real-time across NexusGames</p>
+                        <p class="text-[#475569] text-xs mt-1">Real-time across Cortenity Gaming</p>
                     </div>
 
                 </aside>
@@ -431,7 +431,7 @@
     </main>
 
     <!-- Shared Footer -->
-    <nexus-footer></nexus-footer>
+    <cortenity-footer></cortenity-footer>
 
     <!-- Load Components -->
     <script src="../js/components.js"></script>
@@ -490,7 +490,7 @@
             if (document.getElementById('search-desktop')) document.getElementById('search-desktop').value = e.target.value;
             if (document.getElementById('search-mobile')) document.getElementById('search-mobile').value = e.target.value;
             // Also sync navbar search if it exists
-            const navSearch = document.querySelector('nexus-navbar').shadowRoot?.querySelector('input') || document.querySelector('nexus-navbar input');
+            const navSearch = document.querySelector('cortenity-navbar').shadowRoot?.querySelector('input') || document.querySelector('cortenity-navbar input');
             if (navSearch && e.target !== navSearch) navSearch.value = e.target.value;
             
             applyFilters();
@@ -500,7 +500,7 @@
         
         // Bind navbar search
         setTimeout(() => {
-            const navSearch = document.querySelector('nexus-navbar').shadowRoot?.querySelector('input') || document.querySelector('nexus-navbar input');
+            const navSearch = document.querySelector('cortenity-navbar').shadowRoot?.querySelector('input') || document.querySelector('cortenity-navbar input');
             if (navSearch) navSearch.addEventListener('input', handleSearch);
         }, 100);
 

@@ -1,11 +1,11 @@
 // =============================================
-// Nexus Games - Shared Components
+// Cortenity Gaming - Shared Components
 // Include this script on every page to get
 // a consistent navbar and footer.
 // =============================================
 
 // --- NAVBAR COMPONENT ---
-class NexusNavbar extends HTMLElement {
+class CortenityNavbar extends HTMLElement {
     connectedCallback() {
         const isPage = window.location.pathname.includes('/pages/');
         const r = isPage ? '../' : './';
@@ -22,7 +22,7 @@ class NexusNavbar extends HTMLElement {
                             <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"/>
                         </svg>
                     </div>
-                    <span class="font-black text-white text-[1.05rem] tracking-tight">NEXUS<span class="text-white/40">GAMES</span></span>
+                    <span class="font-black text-white text-[1.05rem] tracking-tight">CORTENITY<span class="text-white/40">GAMING</span></span>
                 </a>
 
                 <!-- CENTER: Nav Links -->
@@ -109,7 +109,7 @@ class NexusNavbar extends HTMLElement {
 }
 
 // --- FOOTER COMPONENT ---
-class NexusFooter extends HTMLElement {
+class CortenityFooter extends HTMLElement {
     connectedCallback() {
         const isPage = window.location.pathname.includes('/pages/');
         const r = isPage ? '../' : './';
@@ -128,7 +128,7 @@ class NexusFooter extends HTMLElement {
                                     <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"/>
                                 </svg>
                             </div>
-                            <span class="font-black text-white text-[1.05rem] tracking-tight">NEXUS<span class="text-[#2563eb]">GAMES</span></span>
+                            <span class="font-black text-white text-[1.05rem] tracking-tight">CORTENITY<span class="text-[#2563eb]">GAMING</span></span>
                         </a>
                         <p class="text-[#475569] text-xs leading-relaxed mb-4">
                             Architecting Digital Ecosystems
@@ -174,7 +174,7 @@ class NexusFooter extends HTMLElement {
 
                 <!-- Bottom bar -->
                 <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-xs text-[#334155] gap-4">
-                    <p>&copy; 2026 NexusGames &mdash; A Qlexia Project. All rights reserved.</p>
+                    <p>&copy; 2026 Cortenity Gaming &mdash; A Qlexia Project. All rights reserved.</p>
                     <div class="flex gap-6">
                         <a href="${p}privacy.html" class="hover:text-[#2563eb] transition-colors">Privacy</a>
                         <a href="${p}terms.html" class="hover:text-[#2563eb] transition-colors">Terms</a>
@@ -186,5 +186,5 @@ class NexusFooter extends HTMLElement {
     }
 }
 
-customElements.define('nexus-navbar', NexusNavbar);
-customElements.define('nexus-footer', NexusFooter);
+customElements.define('cortenity-navbar', CortenityNavbar);
+customElements.define('cortenity-footer', CortenityFooter);
